@@ -22,7 +22,7 @@ def get_ip(file):
 def get_auth_failures(file): 
     with open(file) as fh:
         fstring = fh.read()
-    return fstring.split().count("failure;")
+    return fstring.split().count("Failed")
 def get_auth_successful(file): 
     with open(file) as fh:
         fstring = fh.read()
