@@ -51,10 +51,10 @@ if __name__ == "__main__":
                 print(Fore.YELLOW+"There are "+str(ln)+" Unique IP addresses in "+auth_file+Style.RESET_ALL)
             elif ln <= 100:
                 print(Fore.RED+"There are "+str(ln)+" Unique IP addresses in "+auth_file+Style.RESET_ALL)
-                print("Checking firewall and auth.log is recommanded")
+                print("Checking firewall and auth.log is recommended")
             else:
                 print(Fore.WHITE+Back.RED+"There are "+str(ln)+" Unique IP addresses in "+auth_file+Style.RESET_ALL)
-                print("Checking firewall and auth.log is recommanded")
+                print("Checking firewall and auth.log is recommended")
             fail = get_auth_failures(auth_file)
             if fail <= 5:
                 print(Fore.GREEN+"There are "+str(fail)+" Authentication failures reported "+auth_file+Style.RESET_ALL)
@@ -62,7 +62,7 @@ if __name__ == "__main__":
                 print(Fore.YELLOW+"There are "+str(fail)+" Authentication failures reported "+auth_file+Style.RESET_ALL)
             elif fail <= 30:
                 print(Fore.RED+"There are "+str(fail)+" Authentication failures reported "+auth_file+Style.RESET_ALL)
-                print("Checking firewall and auth.log is recommanded")
+                print("Checking firewall and auth.log is recommended")
             else:
                 print(Fore.WHITE+Back.RED+"There are "+str(fail)+" Authentication failures reported "+auth_file+Style.RESET_ALL)
                 print("Checking firewall and auth.log is recommanded")
